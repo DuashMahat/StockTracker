@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stockTrackers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6en-qH-dYP">
+                                <rect key="frame" x="16" y="451" width="343" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="YRE-5A-lOM" id="LhF-TX-rfc"/>
+                                    <outlet property="delegate" destination="YRE-5A-lOM" id="8ng-Ip-RkW"/>
+                                </connections>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRE-5A-lOM" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stockimg" translatesAutoresizingMaskIntoConstraints="NO" id="gnY-gL-mX6">
+                                        <rect key="frame" x="67" y="21" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z88-eD-GJO">
+                                <rect key="frame" x="8" y="178" width="359" height="65"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="hqB-1V-gre"/>
+                                    <constraint firstAttribute="width" constant="359" id="o2i-yI-azG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
+                                <color key="textColor" red="0.94509803920000002" green="0.65490196079999996" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNW-GE-auT" userLabel="Bitcon P Label2">
+                                <rect key="frame" x="8" y="251" width="359" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="359" id="70M-uM-qVt"/>
+                                    <constraint firstAttribute="height" constant="64" id="Xuw-o8-0Sh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
+                                <color key="textColor" red="0.94509803920000002" green="0.65490196079999996" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaS-pw-C11" userLabel="Bitcon P label3">
+                                <rect key="frame" x="8" y="323" width="359" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="359" id="BkU-Iw-I5a"/>
+                                    <constraint firstAttribute="height" constant="64" id="CGv-sF-qF4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
+                                <color key="textColor" red="0.94509803920000002" green="0.65490196079999996" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.072053155879999997" green="0.10538065150000001" blue="0.40309169189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BaS-pw-C11" secondAttribute="trailing" constant="8" id="1tm-FM-2iS"/>
+                            <constraint firstItem="6en-qH-dYP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8Ye-E9-deX"/>
+                            <constraint firstItem="z88-eD-GJO" firstAttribute="top" secondItem="YRE-5A-lOM" secondAttribute="bottom" constant="8" id="D6Q-5M-og1"/>
+                            <constraint firstItem="BaS-pw-C11" firstAttribute="top" secondItem="TNW-GE-auT" secondAttribute="bottom" constant="8" id="Dse-z7-lez"/>
+                            <constraint firstItem="TNW-GE-auT" firstAttribute="top" secondItem="z88-eD-GJO" secondAttribute="bottom" constant="8" id="EWH-RM-MJG"/>
+                            <constraint firstItem="6en-qH-dYP" firstAttribute="top" secondItem="BaS-pw-C11" secondAttribute="bottom" constant="64" id="GhY-c9-TKM"/>
+                            <constraint firstItem="BaS-pw-C11" firstAttribute="top" secondItem="TNW-GE-auT" secondAttribute="bottom" constant="8" id="LnN-aD-HwU"/>
+                            <constraint firstItem="z88-eD-GJO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="NDC-4P-mhh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z88-eD-GJO" secondAttribute="trailing" constant="8" id="Ved-qn-Kz1"/>
+                            <constraint firstItem="YRE-5A-lOM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XjD-Kg-5HY"/>
+                            <constraint firstItem="TNW-GE-auT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="hRC-WV-pwi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TNW-GE-auT" secondAttribute="trailing" constant="8" id="ja7-0s-89Y"/>
+                            <constraint firstItem="BaS-pw-C11" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="kUw-pb-8si"/>
+                            <constraint firstItem="6en-qH-dYP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="otV-Cu-Rbp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6en-qH-dYP" secondAttribute="trailing" constant="16" id="rzE-Ka-Zgk"/>
+                            <constraint firstItem="YRE-5A-lOM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vhZ-3Z-BBN"/>
+                            <constraint firstItem="TNW-GE-auT" firstAttribute="top" secondItem="z88-eD-GJO" secondAttribute="bottom" constant="8" id="zSY-fS-THp"/>
+                            <constraint firstItem="YRE-5A-lOM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zmF-TO-z1B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bitcoinPriceLabel" destination="z88-eD-GJO" id="It7-Vi-9ao"/>
+                        <outlet property="currencyPicker" destination="6en-qH-dYP" id="t8Q-Bo-grb"/>
+                        <outlet property="highLable" destination="TNW-GE-auT" id="xZR-tY-9WP"/>
+                        <outlet property="imageViewLabel" destination="gnY-gL-mX6" id="VWj-Qj-cUN"/>
+                        <outlet property="lowLabel" destination="BaS-pw-C11" id="Ix7-bW-W9e"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stockimg" width="1024" height="681"/>
+    </resources>
+</document>
