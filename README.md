@@ -3,6 +3,7 @@ An app that tracks the current stocks of major companies listed on nasdaq stock 
 
 ![Alt text](/images/micro.png?raw=true "Optional Title")
 
+![Alt text](/images/netflix.png?raw=true "Optional Title")
 ![Alt text](/images/ap.png?raw=true "Optional Title")
 
 
