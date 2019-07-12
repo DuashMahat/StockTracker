@@ -38,6 +38,8 @@ class ViewController: UIViewController  , UIPickerViewDelegate , UIPickerViewDat
     
     @IBOutlet weak var imageViewLabel: UIImageView!
     
+    @IBOutlet weak var volumeLabel: UILabel!
+    @IBOutlet weak var closeLabel: UILabel!
     let date = Date()
     let formatter = DateFormatter()
     var result = "";
@@ -168,6 +170,8 @@ class ViewController: UIViewController  , UIPickerViewDelegate , UIPickerViewDat
                 self.bitcoinPriceLabel.text = "Open:  " +  "$ " + value["1. open"].string!
                 self.highLable.text = "High: " +  "$ " +  value["2. high"].string!
                 self.lowLabel.text = "Low: " +   "$ " + value["3. low"].string!
+                self.closeLabel.text = "Close: " + "$ " + value["4. close"].string!
+                self.volumeLabel.text = "Volume: " + "$ " + value["5. volume"].string!
                 break;
             }
             
